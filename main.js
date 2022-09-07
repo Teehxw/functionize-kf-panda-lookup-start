@@ -61,3 +61,11 @@ function searchClicked() {
     document.getElementById('quote').innerHTML = 'Character Not Found';
   }
 }
+
+//Function for updating the page
+
+function setCharac(characName){
+  document.getElementById('character-name').innerHTML = characName;
+  document.getElementById('main-img').src = `img/${characName}`;
+  document.getElementById('quote').innerHTML = characName;
+}
